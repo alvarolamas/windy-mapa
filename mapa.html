@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Mapa Windy</title>
   <style>
     html, body, #windy {
@@ -17,13 +17,13 @@
   <script>
     const options = {
       key: 'FMWVgWTcWMQj7siEaOL9lnXARaCitPzM',
-      lat: -34.6, // Cambiar por tus coordenadas
+      lat: -34.6,
       lon: -58.4,
       zoom: 8,
-      overlay: 'wind'
+      overlay: 'wind',
     };
 
-    windyInit(options, function(windyAPI) {
+    windyInit(options, (windyAPI) => {
       const { map } = windyAPI;
     });
   </script>
