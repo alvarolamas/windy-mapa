@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Mapa Windy</title>
+  <meta charset="utf-8">
+  <title>Windy Mapa</title>
   <style>
     html, body, #windy {
       margin: 0;
-      height: 100%;
+      padding: 0;
       width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -17,17 +18,15 @@
   <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
   <script>
     const options = {
-      key: 'FMWVgWTcWMQj7siEaOL9lnXARaCitPzM', // tu clave válida
-      lat: -34.6,    // Buenos Aires
+      key: 'FMWVgWTcWMQj7siEaOL9lnXARaCitPzM',  // Tu API Key de Windy
+      lat: -34.6,
       lon: -58.4,
-      zoom: 7,
+      zoom: 6,
       overlay: 'wind'
     };
 
-    // Esta función se ejecuta cuando Windy carga
-    windyInit(options, (windyAPI) => {
-      const { map } = windyAPI;
-      console.log('Mapa Windy cargado correctamente');
+    windyInit(options, windyAPI => {
+      console.log('Windy API cargada correctamente');
     });
   </script>
 </body>
