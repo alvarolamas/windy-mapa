@@ -16,15 +16,16 @@
   <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
   <script>
     const options = {
-      key: 'FMWVgWTcWMQj7siEaOL9lnXARaCitPzM',
-      lat: -34.6,
+      key: 'FMWVgWTcWMQj7siEaOL9lnXARaCitPzM', // Tu API key de Windy
+      lat: -34.6, // Coordenadas iniciales
       lon: -58.4,
       zoom: 8,
-      overlay: 'wind',
+      overlay: 'wind' // Tipo de capa inicial
     };
 
     windyInit(options, (windyAPI) => {
       const { map } = windyAPI;
+      // Podés agregar más lógica acá si querés
     });
   </script>
 </body>
